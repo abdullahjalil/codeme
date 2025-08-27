@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="./stylesheets/tab.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msn-container">
+        <div class="msn-messenger-window">
+            <div class="msn-header">
+                <span class="msn-title">MSN Messenger Code Editor</span>
+                <div class="msn-controls">
+                    <button title="Minimize" id="minimize-btn">_</button>
+                    <button title="Maximize" id="maximize-btn">□</button>
+                    <button title="Close" id="close-btn">×</button>
+                </div>
+            </div>
+            <div class="msn-tabs" id="tabs"></div>
+            <div class="msn-body" id="editor-body">
+                <div class="msn-sidebar">
+                    <div class="msn-user">
+                        <img src="https://www.gravatar.com/avatar?d=mp&s=48" alt="User Avatar" class="msn-avatar">
+                        <span class="msn-username">Coder</span>
+                        <span class="msn-status">Online</span>
+                    </div>
+                    <ul class="msn-contacts">
+                        <li><span class="msn-contact-online"></span> Alice</li>
+                        <li><span class="msn-contact-away"></span> Bob</li>
+                        <li><span class="msn-contact-offline"></span> Charlie</li>
+                    </ul>
+                </div>
+                <div class="msn-editor-area" id="editor-area">
+                    <!-- Editor instances will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="msn-start-chat-btn" id="start-chat-btn" style="display:none;">Start Chat</button>
+    <script>
+    // ... your script as before ...
+    </script>
+    <script src="./javascript/editor.js"></script>
+    <script src="./javascript/tab.js"></script>
+</body>
+</html>
